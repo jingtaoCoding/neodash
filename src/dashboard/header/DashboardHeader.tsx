@@ -69,7 +69,7 @@ export const NeoDashboardHeader = ({ classes, open, standalone, pagenumber, page
                 transition: "width 125ms cubic-bezier(0.4, 0, 0.6, 1) 0ms"
             }
         }>
-            <Toolbar key={1} style={{ paddingRight: 24, minHeight: "64px", background: '#0B297D', zIndex: 1201 }}>
+            <Toolbar key={1} style={{ paddingRight: 24, minHeight: "64px", background: '#000000', zIndex: 1201 }}>
                 {!standalone ? <IconButton
                     edge="start"
                     color="inherit"
@@ -127,7 +127,7 @@ export const NeoDashboardHeader = ({ classes, open, standalone, pagenumber, page
                 {!standalone ? <div style={{ width: open ? "0px" : "57px", zIndex: open ? 999 : 999, transition: "width 125ms cubic-bezier(0.4, 0, 0.6, 1) 0ms", height: "0px", background: "white" }}> </div> : <></>}
 
                 <div style={{
-                    width: '100%', zIndex: -112, height: "48px", overflowX: "hidden", overflowY: "auto", background: "rgba(240,240,240)",
+                    width: '100%', zIndex: -112, height: "48px", overflowX: "hidden", overflowY: "auto", background: "rgb(224, 224, 224)",
                     boxShadow: "2px 1px 10px 0px rgb(0 0 0 / 12%)",
                     borderBottom: "1px solid lightgrey"
                 }}>

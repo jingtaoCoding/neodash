@@ -11,7 +11,7 @@ export const NeoDashboardPlaceholder = ({connected}) => {
                 transition: "width 125ms cubic-bezier(0.4, 0, 0.6, 1) 0ms"
             }
             }>
-                <Toolbar style={{ paddingRight: 24, minHeight: "64px", background: '#0B297D', zIndex: 1201 }}>
+                <Toolbar style={{ paddingRight: 24, minHeight: "64px", background: '#000000', zIndex: 1201 }}>
                     <IconButton
                         edge="start"
                         color="inherit"
