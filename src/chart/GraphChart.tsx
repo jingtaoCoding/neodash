@@ -51,7 +51,7 @@ const NeoGraphChart = (props: ChartProps) => {
     };
 
     // Retrieve config from advanced settings
-    const backgroundColor = props.settings && props.settings.backgroundColor ? props.settings.backgroundColor : "#fafafa";
+    const backgroundColor = props.settings && props.settings.backgroundColor ? props.settings.backgroundColor : "#111111";
     const nodeSizeProp = props.settings && props.settings.nodeSizeProp ? props.settings.nodeSizeProp : "size";
     const nodeColorProp = props.settings && props.settings.nodeColorProp ? props.settings.nodeColorProp : "color";
     const defaultNodeSize = props.settings && props.settings.defaultNodeSize ? props.settings.defaultNodeSize : 2;
@@ -72,7 +72,7 @@ const NeoGraphChart = (props: ChartProps) => {
     const lockable = props.settings && props.settings.lockable !== undefined ? props.settings.lockable : true;
     const drilldownLink = props.settings && props.settings.drilldownLink !== undefined ? props.settings.drilldownLink : "";
     const selfLoopRotationDegrees = 45;
-    const rightClickToExpandNodes = false; // TODO - this isn't working properly yet, disable it.
+    const rightClickToExpandNodes = true; // TODO - this isn't working properly yet, disable it.
     const defaultNodeColor = "lightgrey"; // Color of nodes without labels
     const linkDirectionalParticles = props.settings && props.settings.relationshipParticles ? 5 : undefined;
     const linkDirectionalParticleSpeed = 0.005; // Speed of particles on relationships.
