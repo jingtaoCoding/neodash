@@ -1,6 +1,17 @@
 main {
     background: black !important;
 }
+.MuiSvgIcon-root{
+    color: whitesmoke;
+}
+.MuiListItemText-root{
+    color: whitesmoke;
+}
+
+.MuiFormLabel-root .MuiInputLabel-root .MuiInputLabel-formControl .MuiInputLabel-animated .MuiInputLabel-shrink .MuiFormLabel-filled{
+    color: lightgray;
+}
+
 .MuiDrawer-paper{
     position: relative !important;
 }
@@ -130,9 +141,18 @@ main {
     display: none;
   }
 
-  .MuiDrawer-docked .MuiDrawer-paper {
-      overflow-x: hidden;
-  }
+.MuiDrawer-docked{
+    background: black !important;
+}
+.MuiDrawer-docked .MuiDrawer-paper {
+    overflow-x: hidden;
+    background: black !important;
+    text: white;
+}
+
+/* .MuiPaper-root .MuiDrawer-docked {
+    background-color: black !important;
+} */
 
   #center-aligned {
       text-align: center;

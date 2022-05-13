@@ -28,7 +28,6 @@ import { Neo4jContext, Neo4jContextState } from "use-neo4j/dist/neo4j.context";
  */
 
 const styles = {
-
 };
 
 /**

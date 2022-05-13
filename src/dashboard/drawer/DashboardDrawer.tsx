@@ -31,6 +31,7 @@ export const NeoDrawer = ({ open, hidden, connection, dashboardSettings, updateD
             variant="permanent"
             style={
                 (open) ? {
+                    backgroundColor: "#222", color: "white",
                     position: 'relative',
                     overflowX: 'hidden',
                     width: '240px',
@@ -38,10 +39,10 @@ export const NeoDrawer = ({ open, hidden, connection, dashboardSettings, updateD
                     boxShadow: "2px 1px 10px 0px rgb(0 0 0 / 12%)",
 
                 } : {
+                   backgroundColor: "#222", color: "white",
                     position: 'relative',
                     overflowX: 'hidden',
                     boxShadow: " 2px 1px 10px 0px rgb(0 0 0 / 12%)",
-
                     transition: "width 125ms cubic-bezier(0.4, 0, 0.6, 1) 0ms",
                     width: "56px"
                 }
@@ -49,6 +50,7 @@ export const NeoDrawer = ({ open, hidden, connection, dashboardSettings, updateD
             open={open == true} 
         >
             <div style={{
+                backgroundColor: "#222", color: "white",
                 display: 'flex',
                 alignItems: 'center',
                 overflowX: 'hidden',
@@ -61,7 +63,7 @@ export const NeoDrawer = ({ open, hidden, connection, dashboardSettings, updateD
                 <Button
                         component="label"
                         onClick={resetApplication}
-                        style={{ backgroundColor: "white", marginLeft: "-8px"}}
+                        style={{ backgroundColor: "#222", color: "white", marginLeft: "-8px"}}
                         color="default"
                         variant="outlined"
                         size="small"
@@ -70,20 +72,23 @@ export const NeoDrawer = ({ open, hidden, connection, dashboardSettings, updateD
                 </ListItem>
 
 
-                <IconButton onClick={handleDrawerClose}>
-                    <ChevronLeftIcon />
+                <IconButton 
+                onClick={handleDrawerClose} 
+                    style={{ backgroundColor: "#222", color: "white" }} >
+                    <ChevronLeftIcon style={{ backgroundColor: "#222", color: "white" }}/>
                 </IconButton>
             </div>
             <Divider />
-            <div >
-                <ListItem style={{ background: "white", height: "47px" }} >
-                    <ListItemIcon>
-                    </ListItemIcon>
+
+            <div style={{color: "white"}}>
+                <ListItem style={{ height: "47px" }} >
+                    <ListItemIcon style={{backgroundColor: "#222", color: "white"}}/>
                     <ListItemText primary="" />
                 </ListItem>
             </div>
             <Divider />
-            <List>
+
+            <List >
                 <div>
                     <NeoSettingsModal dashboardSettings={dashboardSettings} updateDashboardSetting={updateDashboardSetting}></NeoSettingsModal>
                     <NeoSaveModal></NeoSaveModal>
@@ -92,13 +97,14 @@ export const NeoDrawer = ({ open, hidden, connection, dashboardSettings, updateD
                 </div>
             </List>
             <Divider />
+
             <List>
                 <NeoDocumentationModal database={connection.database}></NeoDocumentationModal>
-                <ListItem button onClick={onAboutModalOpen}>
-                    <ListItemIcon>
-                        <InfoOutlinedIcon />
+                <ListItem button onClick={onAboutModalOpen} >
+                    <ListItemIcon  >
+                        <InfoOutlinedIcon style={{ backgroundColor: "#222", color: "white"}} />
                     </ListItemIcon>
-                    <ListItemText primary="About" />
+                    <ListItemText primary="About" style={{ backgroundColor: "transparent", color: "white"}}  />
                 </ListItem>
             </List>
             <Divider />
