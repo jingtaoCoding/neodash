@@ -43,26 +43,26 @@ const NeoCardViewHeader = ({ title, editable, onTitleUpdate, fullscreenEnabled, 
         }}
     />
 
-    const settingsButton = <Tooltip title="Settings" aria-label="settings">
+    const settingsButton = <Tooltip title="Settings" aria-label="settings" style={{ backgroundColor: "#222", color: "white" }} >
         <IconButton aria-label="settings"
             onClick={onToggleCardSettings}>
             <MoreVertIcon />
         </IconButton>
     </Tooltip>
 
-    const maximizeButton = <Tooltip title="Maximize" aria-label="maximize">
+    const maximizeButton = <Tooltip title="Maximize" aria-label="maximize" style={{ backgroundColor: "#222", color: "white" }}  >
         <IconButton aria-label="maximize"
             onClick={onToggleCardExpand}>
             <FullscreenIcon />
         </IconButton>
     </Tooltip>
 
-    const unMaximizeButton = <IconButton aria-label="un-maximize"
+    const unMaximizeButton = <IconButton aria-label="un-maximize" style={{ backgroundColor: "#222", color: "white" }} 
         onClick={onToggleCardExpand}>
         <FullscreenExit />
     </IconButton>
 
-    const downloadImageButton = <Tooltip title="Download as Image" aria-label="download">
+    const downloadImageButton = <Tooltip title="Download as Image" aria-label="download" style={{ backgroundColor: "#222", color: "white" }} >
         <IconButton onClick={onDownloadImage} aria-label="download csv">
             <ImageIcon style={{ fontSize: "1.3rem", zIndex: 5 }} fontSize="small">
             </ImageIcon>

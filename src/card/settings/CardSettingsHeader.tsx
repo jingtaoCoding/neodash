@@ -12,12 +12,12 @@ import { FullscreenExit } from '@material-ui/icons';
 
 const NeoCardSettingsHeader = ({ onRemovePressed, onShiftLeftPressed, onShiftRightPressed,
      onToggleCardSettings, onToggleCardExpand, expanded, fullscreenEnabled }) => {
-    const maximizeButton = <IconButton aria-label="maximize"
+    const maximizeButton = <IconButton aria-label="maximize" style={{ backgroundColor: "#222", color: "white" }} 
         onClick={onToggleCardExpand}>
         <FullscreenIcon />
     </IconButton>
 
-    const unMaximizeButton = <IconButton aria-label="un-maximize"
+    const unMaximizeButton = <IconButton aria-label="un-maximize" style={{ backgroundColor: "#222", color: "white" }} 
         onClick={onToggleCardExpand}>
         <FullscreenExit />
     </IconButton>

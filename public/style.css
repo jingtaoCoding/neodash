@@ -1,4 +1,6 @@
-
+main {
+    background: black !important;
+}
 .MuiDrawer-paper{
     position: relative !important;
 }
@@ -12,6 +14,7 @@
     border-bottom: none;
 }
 .MuiContainer-root{
+    margin-top: 0px  !important;
     padding-left: 10px !important;
     padding-right: 10px !important;
 }
@@ -135,6 +138,9 @@
       text-align: center;
   }
 
+.card-view{
+background: black;
+}
 .card-view.expanded {
     position: absolute;
     top: 0;

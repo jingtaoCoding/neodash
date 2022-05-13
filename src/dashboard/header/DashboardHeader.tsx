@@ -123,11 +123,11 @@ export const NeoDashboardHeader = ({ classes, open, standalone, pagenumber, page
                     </IconButton>
                 </Tooltip>
             </Toolbar>
-            <Toolbar key={2} style={{ zIndex: 1001, minHeight: "50px", paddingLeft: "0px", paddingRight: "0px", background: "white" }}>
+            <Toolbar key={2} style={{ zIndex: 1001, minHeight: "0px", paddingLeft: "0px", paddingRight: "0px", background: "black" }}>
                 {!standalone ? <div style={{ width: open ? "0px" : "57px", zIndex: open ? 999 : 999, transition: "width 125ms cubic-bezier(0.4, 0, 0.6, 1) 0ms", height: "0px", background: "white" }}> </div> : <></>}
 
                 <div style={{
-                    width: '100%', zIndex: -112, height: "48px", overflowX: "hidden", overflowY: "auto", background: "rgb(224, 224, 224)",
+                    width: '100%', zIndex: -112, height: "1px", overflowX: "hidden", overflowY: "auto", background: "black",
                     boxShadow: "2px 1px 10px 0px rgb(0 0 0 / 12%)",
                     borderBottom: "1px solid lightgrey"
                 }}>
